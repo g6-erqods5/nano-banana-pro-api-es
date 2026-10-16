@@ -12,7 +12,7 @@
 
 > **from $0.03 per image** (4K $0.04) — un único endpoint compatible con OpenAI en `https://api.apimart.ai/v1`, sin plan mensual. *(observado el 2026-10-12)*
 
-**[Obtener una clave de API](https://go.apimart.ai/k-PENDING-nano-banana-pro-api-es-keys)** · **[Precios en vivo](https://go.apimart.ai/k-PENDING-nano-banana-pro-api-es-pricing)** · **[Página del modelo](https://go.apimart.ai/k-PENDING-nano-banana-pro-api-es-model)** · [⚡ Inicio rápido en 60 segundos](#quickstart)
+**[Obtener una clave de API](https://go.apimart.ai/k-2f7af8)** · **[Precios en vivo](https://go.apimart.ai/k-a256be)** · **[Página del modelo](https://go.apimart.ai/k-ae8b66)** · [⚡ Inicio rápido en 60 segundos](#quickstart)
 
 **Por qué los equipos usan Nano Banana Pro (`gemini-3-pro-image-preview`) a través de APIMart**
 
@@ -31,7 +31,7 @@ Nano Banana Pro is Google's Gemini 3 Pro Image for 4K image generation and editi
 
 | Route | `model` value | Billing | Notes |
 | --- | --- | --- | --- |
-| Per-image | `gemini-3-pro-image-preview` | per delivered image, by resolution | see the [model page](https://go.apimart.ai/k-PENDING-nano-banana-pro-api-es-model) for the exact tiers |
+| Per-image | `gemini-3-pro-image-preview` | per delivered image, by resolution | see the [model page](https://go.apimart.ai/k-ae8b66) for the exact tiers |
 
 Endpoint: `POST https://api.apimart.ai/v1/images/generations`, then poll `GET /v1/tasks/{task_id}`.
 
@@ -46,7 +46,7 @@ Endpoint: `POST https://api.apimart.ai/v1/images/generations`, then poll `GET /v
 
 <!-- pricing:model:end -->
 
-Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-PENDING-nano-banana-pro-api-es-pricing) and [`data/model.json`](data/model.json) are refreshed by CI, and a completed task reports the exact amount in its `cost` field.
+Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-a256be) and [`data/model.json`](data/model.json) are refreshed by CI, and a completed task reports the exact amount in its `cost` field.
 
 ## Request parameters
 
@@ -60,7 +60,7 @@ Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-PENDING-nano-b
 | `image_urls` | string[] | — | reference images as public HTTP(S) URLs or base64 data URLs |
 | `nsfw_check` | boolean | `false` | runs `omni-moderation-latest` before submitting |
 
-The table lists the fields accepted by the APIMart `images/generations` endpoint. Check the [model page](https://go.apimart.ai/k-PENDING-nano-banana-pro-api-es-model) for anything this model adds on top.
+The table lists the fields accepted by the APIMart `images/generations` endpoint. Check the [model page](https://go.apimart.ai/k-ae8b66) for anything this model adds on top.
 
 ## Quickstart
 
@@ -103,15 +103,26 @@ Runnable versions: [`examples/`](examples). The task lifecycle is `pending → p
 
 **How do I get a key?**
 
-Use the [Get an API key](https://go.apimart.ai/k-PENDING-nano-banana-pro-api-es-keys) link — $1 minimum top-up, no plan required.
+Use the [Get an API key](https://go.apimart.ai/k-2f7af8) link — $1 minimum top-up, no plan required.
+
+<!-- related-repos:auto -->
+## Related repositories
+
+- **Same model, this language** — the other half of this pair: [nano-banana-pro-prompts-es](https://github.com/g6-erqods5/nano-banana-pro-prompts-es)
+- **Same model, other languages** — 9 more language builds: 中文 [nano-banana-pro-api-cn](https://github.com/j2pnwx3z8juf/nano-banana-pro-api-cn) · Deutsch [nano-banana-pro-api-de](https://github.com/rs9td1w5p7e/nano-banana-pro-api-de) · Français [nano-banana-pro-api-fr](https://github.com/sgta2m/nano-banana-pro-api-fr) · Relay/gateway `nano-banana-pro-api-gateway` · Bahasa [nano-banana-pro-api-id](https://github.com/qn7wpqwsvs/nano-banana-pro-api-id) · 日本語 [nano-banana-pro-api-ja](https://github.com/z9wa-4xsxvrp/nano-banana-pro-api-ja) · 한국어 [nano-banana-pro-api-ko](https://github.com/wompd2anc/nano-banana-pro-api-ko) · Português [nano-banana-pro-api-pt](https://github.com/f0xtn9oh8g7ia6/nano-banana-pro-api-pt) · Русский [nano-banana-pro-api-ru](https://github.com/v4l5npww2/nano-banana-pro-api-ru)
+- **More models in this language** — [midjourney-api-es](https://github.com/xbuu0/midjourney-api-es) · [gemini-2-5-flash-image-preview-api-es](https://github.com/ekw3w/gemini-2-5-flash-image-preview-api-es) · [nano-banana-api-es](https://github.com/gbm5mfl1/nano-banana-api-es) · [gemini-3-1-flash-image-preview-api-es](https://github.com/x3kcczm8l29xn/gemini-3-1-flash-image-preview-api-es) · [nano-banana-2-api-es](https://github.com/d63hy9t-4pp/nano-banana-2-api-es) · [gemini-3-pro-image-preview-api-es](https://github.com/uv9d8/gemini-3-pro-image-preview-api-es)
+- **Topic hubs** — every build of this model, all languages: [nano-banana-pro](https://github.com/topics/nano-banana-pro) · [nano-banana-pro-api](https://github.com/topics/nano-banana-pro-api)
+
+This repository is one build in a cross-linked set of API guides for the same model family; each language build links back to the others.
+<!-- /related-repos:auto -->
 
 ## Attributed links (how this repository is measured)
 
 | Purpose | Attributed link | Target |
 | --- | --- | --- |
-| Model page | <https://go.apimart.ai/k-PENDING-nano-banana-pro-api-es-model> | `apimart.ai/es/model/nano-banana-2-api` |
-| Live pricing | <https://go.apimart.ai/k-PENDING-nano-banana-pro-api-es-pricing> | `apimart.ai/es/pricing` |
-| Get an API key | <https://go.apimart.ai/k-PENDING-nano-banana-pro-api-es-keys> | `apimart.ai/es/keys` |
+| Model page | <https://go.apimart.ai/k-ae8b66> | `apimart.ai/es/model/nano-banana-2-api` |
+| Live pricing | <https://go.apimart.ai/k-a256be> | `apimart.ai/es/pricing` |
+| Get an API key | <https://go.apimart.ai/k-2f7af8> | `apimart.ai/es/keys` |
 
 Outbound APIMart links are minted through the promo link API; hand-made tracking parameters are rejected by
 `tools/check_links.py` in CI.
